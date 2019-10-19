@@ -17,6 +17,22 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/interceptors": [
+        "./src/app/core/interceptors/"
+      ],
+      "@core/interfaces": [
+        "./src/app/core/interfaces/"
+      ],
+      "@environment": [
+        "./src/environments/environment"
+      ],
+      "@spinner": [
+        "./src/app/core/spinner/"
+      ]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   }
 }
