@@ -1,0 +1,53 @@
+section {
+  overflow: auto;
+  width: 900px;
+  height: 600px;
+  background: white;
+  padding: 30px;
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    justify-content: flex-end;
+  }
+  h1 {
+    text-align: center;
+  }
+  .imageContainer {
+    display: flex;
+    width: 700px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    img {
+      width: 20%;
+    }
+
+  }
+
+  .generalInformation {
+    div {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      p {
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .preview-container {
+    position: relative;
+    border: 1px lightgray;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    .element {
+      position: relative;
+      width: 100%;
+    }
+  }
+}

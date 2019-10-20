@@ -31,4 +31,5 @@ export interface IProduct {
   weight: number;
   weight_unit: string;
   width: number;
+  description_html: string;
 }

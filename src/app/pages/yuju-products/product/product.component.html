@@ -1,0 +1,51 @@
+<section>
+  <div class="headerContainer">
+    <a (click)="dialogRef.close()">Cerrar modal</a>
+  </div>
+  <h1 id="productTitle">{{data?.name}}</h1>
+  <div *ngIf="data.images.length > 0" class="imageContainer">
+    <img *ngFor="let image of data.images" [src]="image.url">
+  </div>
+
+  <div class="generalInformation">
+    <div>
+      Brand:
+      <p>{{data?.brand}}</p>
+    </div>
+    <div>
+      Condition:
+      <p>{{data?.condition}}</p>
+    </div>
+    <div>
+      Price:
+      <p>{{data?.price}}</p>
+    </div>
+    <div>
+      Stock:
+      <p>{{data?.stock}}</p>
+    </div>
+    <div>
+      Weight:
+      <p>{{data?.weight}} {{data?.weight_unit}}</p>
+    </div>
+    <div>
+      Height:
+      <p>{{data?.height}}</p>
+    </div>
+    <div>
+      Created at:
+      <p>{{data?.created_at | date:'medium'}}</p>
+    </div>
+  </div>
+
+  <button (click)="showPreview()">View full product preview description</button>
+
+  <div *ngIf="isPreviewActivated">
+    <h2>Product page preview: </h2>
+    <div class="preview-container" *ngIf="data.description_html">
+      <div class="element" [innerHTML]="data.description_html">
+      </div>
+    </div>
+  </div>
+
+</section>
