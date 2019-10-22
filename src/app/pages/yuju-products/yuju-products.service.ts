@@ -13,8 +13,7 @@ export class YujuProductsDB {
 
   private httpOptions = {
     headers: new HttpHeaders({
-      Accept: 'application/json',
-      CacheControl: 'no-cache',
+      Accept: 'application/json'
     })
   };
 
